@@ -1,0 +1,29 @@
+<!-- xml version and encoding declaration -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- defines we application -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+         id="WebApp_ID" version="3.1">
+
+  <!-- displays name for web application -->
+  <display-name>LoanCalculator</display-name>
+
+  <!-- servlet declaration -->
+  <servlet>
+      <!-- name of servlet -->
+      <servlet-name>LoanCalculatorServlet</servlet-name>
+      <!-- the class of servlet -->
+      <servlet-class>com.calculator.LoanCalculatorServlet</servlet-class>
+  </servlet>
+  
+  <!-- mapping the servlet to a URL pattern -->
+  <servlet-mapping>
+      <!-- name of the servlet -->
+      <servlet-name>LoanCalculatorServlet</servlet-name>
+      <!-- url pattern for which the servlet responds -->
+      <url-pattern>/LoanCalculatorServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
